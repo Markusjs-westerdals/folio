@@ -1,0 +1,14 @@
+.dubi {
+  background: url("../img/dubi_home.png");
+  background-size: cover;
+  background-position-x: 70%; }
+
+.wrap {
+  margin: 0 !important; }
+
+.card {
+  box-shadow: none !important; }
+  .card.description {
+    padding-top: 10px; }
+
+/*# sourceMappingURL=style.css.map */

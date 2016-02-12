@@ -1,0 +1,25 @@
+{
+  "name": "folio",
+  "version": "1.0.0",
+  "description": "My portfolio (hopefully)",
+ls  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Markusjs/folio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Markus Sorem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Markusjs/folio/issues"
+  },
+  "homepage": "https://github.com/Markusjs/folio#readme",
+  "dependencies": {
+    "semantic-ui": "^2.1.8"
+  }
+}
