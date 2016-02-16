@@ -1,14 +1,88 @@
-.dubi {
-  background: url("../img/dubi_home.png");
-  background-size: cover;
-  background-position-x: 70%; }
+html, body {
+  margin: 0; }
 
-.wrap {
-  margin: 0 !important; }
+.title-wrap {
+  text-align: center;
+  margin: 0; }
+  .title-wrap h1 {
+    font-size: 5em; }
+  .title-wrap h3 {
+    top: -10px;
+    font-family: Lato;
+    font-weight: 100;
+    font-size: 4em; }
+  .title-wrap .title {
+    position: relative;
+    top: -15px; }
+
+@media only screen and (max-width: 767px) {
+  .title-wrap h1 {
+    font-size: 3em; }
+  .title-wrap h3 {
+    font-size: 2em; } }
+.project {
+  height: 100%; }
+
+.project-img {
+  background-repeat: no-repeat; }
+  .project-img.dubi {
+    background: url("../img/dubi_home_2.jpg");
+    background-size: cover;
+    background-position-x: -10%; }
+  .project-img.kutt {
+    background: url("../img/kutt_home.jpg");
+    background-size: cover;
+    width: 100% !important; }
+
+.project-side {
+  padding: 0; }
+  .project-side .side-header {
+    text-align: center; }
+    .project-side .side-header h1 {
+      font-size: 3em;
+      color: #646464; }
+    .project-side .side-header .title h3 {
+      font-size: 2em;
+      color: #646464; }
+
+.side-wrap {
+  margin-top: 10px; }
 
 .card {
   box-shadow: none !important; }
   .card.description {
     padding-top: 10px; }
+
+@media only screen and (max-width: 1519px) {
+  .project-side {
+    width: 100%; }
+
+  .project-img.dubi, .project-img.kutt {
+    background-position-x: 30%; } }
+@media only screen and (max-width: 767px) {
+  .card {
+    top: -20px; }
+
+  #gang {
+    display: none; }
+
+  .project-img {
+    background-size: 200%;
+    background-position-x: 400px;
+    background-position-y: 30%; }
+    .project-img.kutt {
+      background-position-x: 10%;
+      background-position-y: 30%; }
+
+  .side-header {
+    display: none; }
+
+  .twelve {
+    height: 70%; }
+
+  .four {
+    height: 30%; } }
+img {
+  height: 200px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,15 +1,86 @@
 html, body {
+  margin: 0;
 }
 
-.dubi {
-  background: url("../img/dubi_home.png");
-  background-size: cover;
-  background-position-x: 70%;
-}
-.wrap {
-  margin: 0!important;
+//1. colors
+//2. front page
+//3. default styling for the project overview
+//2. dubi
 
+
+// 1. colors
+$logo-text: rgb(100, 100, 100);
+
+//2. front page
+.title-wrap {
+  text-align: center;
+  margin: 0;
+  h1 {
+    font-size: 5em;
+  }
+  h3 {
+    top: -10px;
+    font-family: Lato;
+    font-weight: 100;
+    font-size: 4em;
+  }
+  .title {
+    position: relative;
+    top: -15px;
+  }
 }
+@media only screen and (max-width: 767px) {
+  .title-wrap {
+    h1 {
+      font-size: 3em;
+    }
+    h3 {
+      font-size: 2em;
+    }
+  }
+}
+
+//3. default styling for the project overview
+.project {
+  height: 100%;
+}
+.project-img {
+
+  background-repeat: no-repeat;
+  &.dubi {
+    background: url("../img/dubi_home_2.jpg");
+    background-size: cover;
+    background-position-x: -10%;
+  }
+  &.kutt {
+    background: url("../img/kutt_home.jpg");
+    background-size: cover;
+    width: 100% !important;
+  }
+}
+// 3.1. sidebar
+// logo at sidebar for project
+.project-side {
+  padding: 0;
+  .side-header {
+    text-align: center;
+    h1 {
+      font-size: 3em;
+      color: $logo-text;
+    }
+    .title {
+      h3 {
+        font-size: 2em;
+        color: $logo-text;
+      }
+    }
+  }
+}
+
+.side-wrap {
+  margin-top: 10px;
+}
+
 
 .card {
   box-shadow: none !important;
@@ -17,3 +88,50 @@ html, body {
     padding-top: 10px;
   }
 }
+
+
+//media queries
+@media only screen and (max-width: 1519px) {
+  .project-side {
+    width: 100%;
+  }
+  .project-img {
+    &.dubi, &.kutt {
+      background-position-x: 30%;
+    }
+  }
+}
+
+// small
+@media only screen and (max-width: 767px) {
+  .card {
+    top: -20px;
+  }
+  #gang {
+    display: none;
+  }
+  .project-img {
+    background-size: 200%;
+    background-position-x: 400px;
+    background-position-y: 30%;
+    &.kutt {
+      background-position-x: 10%;
+      background-position-y: 30%;
+    }
+  }
+
+  .side-header {
+    display: none;
+  }
+  .twelve {
+    height: 70%;
+  }
+  .four {
+    height: 30%;
+  }
+}
+ img {
+   height: 200px;
+ }
+
+
